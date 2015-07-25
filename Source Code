@@ -1,0 +1,97 @@
+#http://www.codeskulptor.org/#user40_oMCV0H3aGi5p7wX.py
+
+# calculator with basic functions  
+
+
+import simplegui
+
+# intialize globals
+store = 0
+operand = 0
+
+
+# event handlers for calculator with a store and operand
+
+def output():
+    """prints contents of store and operand"""
+    print "Store = ",store
+    print "Operand = ", operand
+    print ""
+    
+def store1(s):
+    """ enter a new operand"""
+    global store
+    store =  str(store)
+    return "store" + ":" + " "+ store  
+
+def swap():
+    """ swap contents of store and operand"""
+    global store, operand
+    store, operand = operand, store
+    output()
+    
+def add():
+    """ add operand to store"""
+    global store
+    store = int(store) + int(operand)
+    output()
+
+def sub():
+    """ subtract operand from store"""
+    global store
+    store = int(store) - int(operand)
+    output()
+
+def mult():
+    """ multiply store by operand"""
+    global store
+    store = int(store) * int(operand)
+    output()
+
+def div():
+    """ divide store by operand"""
+    global store
+    store = int(store) / int(operand)
+    output()
+
+def enter(t):
+    """ enter a new operand"""
+    global store, operand
+    
+    operand =  str(t)
+    
+    #output()
+    return "operand" + ":" + " "+ operand
+
+    
+    
+def draw(canvas):
+    canvas.draw_text(enter(operand), [60, 110], 20, "Red")
+    canvas.draw_text(store1(store), [60, 70], 20, "Blue")
+    
+                     
+                     
+    # define an input field handler
+def input_handler(text):
+    global operand
+    operand = float(text)
+    store=float(text)
+    
+    
+    
+# create frame
+f = simplegui.create_frame("Calculator",400,300)
+
+# register event handlers and create control elements
+f.set_draw_handler(draw)
+f.add_button("Print", output, 100)
+f.add_button("Swap", swap, 100)
+f.add_button("Add", add, 100)
+f.add_button("Sub", sub, 100)
+f.add_button("Mult", mult, 100)
+f.add_button("Div", div, 100)
+f.add_input("Enter", enter, 100)
+
+
+# get frame rolling
+f.start()
