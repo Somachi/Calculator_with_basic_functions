@@ -12,10 +12,10 @@ This program uses python language in a browser-based Python interpreter called C
 ![Screen Shot 2019-12-22 at 8 29 00 PM](https://user-images.githubusercontent.com/13493736/71334068-bcba3d00-24f9-11ea-84b8-f50285c021d8.png)
 
 4. To make a calculation enter the number <br>
-   Example: To add 2 + 4
-   i. Enter 2 in the field provided below the Enter text
-   ii. Hit enter key
-   iii. Using the mouse click Add
-   iv. Enter 4 in the field provided below the Enter text
-   v. Hit enter key
-   vi. Using the mouse click Add and the "store" will equate to 6 as shown on the GUI version of the calculator  above (No. 3        above)
+   Example: To add 2 + 4  <br>
+   i. Enter 2 in the field provided below the Enter text  <br>
+   ii. Hit enter key  <br>
+   iii. Using the mouse click Add  <br>
+   iv. Enter 4 in the field provided below the Enter text  <br>
+   v. Hit enter key  <br>
+   vi. Using the mouse click Add and the "store" will equate to 6 as shown on the GUI version of the calculator  above (No. 3        above)  <br>
