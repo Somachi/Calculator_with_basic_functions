@@ -11,7 +11,7 @@ This program uses python language in a browser-based Python interpreter called C
 3. You can place the new tab on a different windows tab by removing it from the current windows tabs just as show below. This will enable to see both the GUI version of the calculator (new tab) and the code result of the calculator (current tab)
 ![Screen Shot 2019-12-22 at 8 29 00 PM](https://user-images.githubusercontent.com/13493736/71334068-bcba3d00-24f9-11ea-84b8-f50285c021d8.png)
 
-4. To make a calculation enter the number
+4. To make a calculation enter the number <br>
    Example: To add 2 + 4
    i. Enter 2 in the field provided below the Enter text
    ii. Hit enter key
